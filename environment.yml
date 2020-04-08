@@ -1,0 +1,22 @@
+name: lausanne-tree-canopy
+channels:
+  - conda-forge
+dependencies:
+  - pip
+  - pip:
+    - -e .
+    - detectree==0.2.0    
+    - flake8-isort==2.7.0
+  - setuptools
+  - wheel
+  - click
+  - sphinx
+  - coverage
+  - flake8
+  - python=3.7
+  - ipykernel
+  - gdal
+  - joblib
+  - scikit-learn=0.22.1
+  - pyproj=2.6.0
+  - geopandas=0.7.0
