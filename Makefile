@@ -1,5 +1,5 @@
 .PHONY: swissimage_tiles train_test_split train_classifiers classify_tiles \
-	tree_canopy_map
+	tree_canopy_map confusion_df
 
 #################################################################################
 # GLOBALS                                                                       #
@@ -154,3 +154,18 @@ $(AGGLOM_TREES_TIF): $(RESPONSE_TILES_CSV) $(CLASSIFIED_TILES_CSV_FILEPATHS) \
 	gdalwarp -t_srs $(CRS) $(TEMP_TREE_CANOPY_TIF) $@
 	rm $(TEMP_TREE_CANOPY_TIF)
 tree_canopy_map: $(TREE_CANOPY_TIF)
+
+## 7. Validation - confusion data frame
+### variables
+VALIDATION_TILES_DIR := $(DATA_INTERIM_DIR)/validation-tiles
+CONFUSION_CSV := $(VALIDATION_TILES_DIR)/confusion.csv
+#### code
+MAKE_CONFUSION_DF_PY := $(CODE_DIR)/make_confusion_df.py
+
+### rules
+$(CONFUSION_CSV): $(MODEL_JOBLIB_FILEPATHS)
+	python $(MAKE_CONFUSION_DF_PY) $(VALIDATION_TILES_DIR) $(SPLIT_CSV) \
+		$(MODELS_DIR) $@
+confusion_df: $(CONFUSION_CSV)
+
+#################################################################################
