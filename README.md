@@ -8,17 +8,18 @@ Tree canopy map of Lausanne at the 1m resolution obtained with [DetecTree](https
 
 ## Technical specifications
 
-* **Extent**: From file [agglom-extent.shp](https://github.com/martibosch/lausanne-tree-canopy/blob/master/data/raw/agglom-extent.shp). Obtained with the [Urban footprinter](https://github.com/martibosch/urban-footprinter). See the [lausanne-agglom-extent](https://github.com/martibosch/lausanne-agglom-extent) repository for more details.
+* **Source**: [SWISSIMAGE 2016](https://shop.swisstopo.admin.ch/en/products/images/ortho_images)
 * **CRS**: CH1903+/LV95 -- Swiss CH1903+/LV95 ([EPSG:2056](https://epsg.io/2056))
 * **Resolution**: 1m
+* **Extent**: From file [agglom-extent.shp](https://github.com/martibosch/lausanne-tree-canopy/blob/master/data/raw/agglom-extent.shp). Obtained with the [Urban footprinter](https://github.com/martibosch/urban-footprinter). See the [lausanne-agglom-extent](https://github.com/martibosch/lausanne-agglom-extent) repository for more details.
 * **Method**: supervised learning (AdaBoost) with 4 classifiers on manually-generated ground truth masks for 7 training tiles (out of a total 499 tiles) of 512x512 pixels. See Yang et al. [2] for more details.
 * **Accuracy**: 91.75%, estimated from [a manually-generated ground truth mask for 1 tile of 512x512 pixels](https://github.com/martibosch/lausanne-tree-canopy/blob/master/data/interim/validation-tiles/tile_16384-2560.tif).
 
 ## Citation
 
-If you use this dataset, a citation would certainly be appreciated. Note that DetecTree is based on the methods of Yang et al. [2], therefore it seems fair to reference their work too. An example citation in an academic paper might read as follows:
+If you use this dataset, the source, i.e., SWISSIMAGE 2016 *must* be acknowledged. Additionally, a citation to DetecTree would certainly be appreciated. Note that DetecTree is based on the methods of Yang et al. [2], therefore it seems fair to reference their work too. An example citation in an academic paper might read as follows:
 
-> The tree canopy dataset for the agglomeration of Lausanne has been obtained with the Python library DetecTree (Bosch, 2020) following the approach of Yang et al. (2009).
+> The tree canopy dataset for the agglomeration of Lausanne has been obtained from the SWISSIMAGE 2016 aerial imagery dataset with the Python library DetecTree (Bosch, 2020), which is based on the approach of Yang et al. (2009).
 
 ## Steps to reproduce
 
