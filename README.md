@@ -12,7 +12,7 @@ Tree canopy map of Lausanne at the 1m resolution obtained with [DetecTree](https
 * **CRS**: CH1903+/LV95 -- Swiss CH1903+/LV95 ([EPSG:2056](https://epsg.io/2056))
 * **Resolution**: 1m
 * **Method**: supervised learning (AdaBoost) with 4 classifiers on manually-generated ground truth masks for 7 training tiles (out of a total 499 tiles) of 512x512 pixels. See Yang et al. [2] for more details.
-* **Accuracy**: 91.75%, estimated from a manually-generated ground truth mask for 1 tile of 512x512 pixels.
+* **Accuracy**: 91.75%, estimated from [a manually-generated ground truth mask for 1 tile of 512x512 pixels](https://github.com/martibosch/lausanne-tree-canopy/blob/master/data/interim/validation-tiles/tile_16384-2560.tif).
 
 ## Citation
 
