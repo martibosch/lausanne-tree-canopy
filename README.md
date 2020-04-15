@@ -127,12 +127,13 @@ make confusion_df
 
 will generate a confusion data frame with the proportion of tree and non-tree pixels that have been classified correctly. The trace of such confusion data frame corresponds to the estimated classification accuracy.
 
+## Acknowledgments
+
+* With the support of the École Polytechnique Fédérale de Lausanne (EPFL)
+* Project based on the [cookiecutter data science project template](https://drivendata.github.io/cookiecutter-data-science). #cookiecutterdatascience
+
 ## References
 
 1. Bosch, M. (2020). Detectree: Tree detection from aerial imagery in Python. Journal of Open Source  Software (under review).
 
 2. Yang, L., Wu, X., Praun, E., & Ma, X. (2009). Tree detection from aerial imagery. In Proceedings of the 17th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (pp. 131-137). ACM.
-
---------
-
-Project based on the [cookiecutter data science project template](https://drivendata.github.io/cookiecutter-data-science). #cookiecutterdatascience
