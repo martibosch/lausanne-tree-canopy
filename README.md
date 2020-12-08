@@ -1,8 +1,9 @@
 [![GitHub license](https://img.shields.io/github/license/martibosch/lausanne-tree-canopy.svg)](https://github.com/martibosch/lausanne-tree-canopy/blob/master/LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4310112.svg)](https://doi.org/10.5281/zenodo.4310112)
 
 # Lausanne tree canopy
 
-Tree canopy map of Lausanne at the 1m resolution obtained with [DetecTree](https://github.com/martibosch/detectree) [1] from [SWISSIMAGE 2016](https://shop.swisstopo.admin.ch/en/products/images/ortho_images).
+Tree canopy map of Lausanne at the 1m resolution obtained with [DetecTree](https://github.com/martibosch/detectree) [1] from [SWISSIMAGE 2016](https://shop.swisstopo.admin.ch/en/products/images/ortho_images). The actual raster file (231.3 MB) [can be downloaded from Zenodo](https://doi.org/10.5281/zenodo.4310112).
 
 ![Figure](figure.png)
 
